@@ -9,7 +9,7 @@ def divisors(n):
        if all(i % x != 0 for x in primes) or i==2: #if number is prime
            primes.append(i)  #add to list of prime numbers
            if n%i == 0:
-                exp = 0 #each exp represents a,b,c ...
+                exp = 0 #each exp represents a,b,c... in tau divisor equation
                 while n%i == 0:
                     n= n/i
                     exp = exp + 1 
